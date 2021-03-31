@@ -87,11 +87,12 @@
 
 ## 其他
   想要切换其他版本的Phalcon可以切一下git分之  
-         
-         
+  
+## phpstorm + xdebug
+> https://stackoverflow.com/questions/39143814/xdebug-not-working-in-docker-desktop-for-mac
          
            
-         
+  
            
        
                
