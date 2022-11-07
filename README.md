@@ -90,6 +90,22 @@
   
 ## phpstorm + xdebug
 > https://stackoverflow.com/questions/39143814/xdebug-not-working-in-docker-desktop-for-mac
+
+## xdebug [Mac+Docker+Phpstrom跑php的Phalcon 框架项目并xdebug成功](https://blog.csdn.net/weixin_36642528/article/details/127727423)  
+```
+1. 定位到 php.ini 文件
+find / -name php.ini
+2. vim /etc/php/5.6/mods-available/xdebug.ini
+
+3.添加配置
+zend_extension=xdebug.so
+xdebug.remote_port=9001
+xdebug.idekey=PHPSTORM
+xdebug.remote_log=/tmp/xdebug.log
+xdebug.remote_host=host.docker.internal
+xdebug.remote_enable=1
+xdebug.remote_connect_back=0
+```
          
            
   
